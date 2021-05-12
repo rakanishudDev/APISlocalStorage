@@ -15,16 +15,18 @@ form.addEventListener('submit', function(e) {
 });
 }
 //adding event listener to the button and store name value to local storage then calling function nmeDsplyChk. forget button function is added too
+if (submitBtn) {
 submitBtn.addEventListener('click', function() {
   localStorage.setItem('name', nameInput.value);
   nameDisplayCheck();
-
 });
+}
+if (forgetBtn) {
 forgetBtn.addEventListener('click', function() {
   localStorage.removeItem('name');
   nameDisplayCheck();
 });
-
+};
 //nameDisplayCheck function declaration
 
 function nameDisplayCheck() {
