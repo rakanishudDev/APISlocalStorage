@@ -9,9 +9,9 @@ const forgetBtn = document.querySelector('#forgetName');
 const h1 = document.querySelector('h1');
 const personalGreeting = document.querySelector('.personal-greeting');
 //stop the form from submitting when button pressed
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-});
+//form.addEventListener('submit', function(e) {
+//  e.preventDefault();
+//});
 //adding event listener to the button and store name value to local storage then calling function nmeDsplyChk. forget button function is added too
 submitBtn.addEventListener('click', function() {
   localStorage.setItem('name', nameInput.value);
